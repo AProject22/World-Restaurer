@@ -1,0 +1,9 @@
+#                   World Restaurer
+#             The "SaveAndLoadOnStartServer" option is a option to save and load the worlds backup when the server starts, it's can make lag, and more time for start the server
+#             The list "Worlds" is the world backuped and possible for restauration
+
+SaveAndLoadOnStartServer: false
+Worlds:
+   - 'Spawn'
+   - 'world'
+   - 'shop'

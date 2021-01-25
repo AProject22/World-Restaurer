@@ -1,0 +1,32 @@
+name: WorldRestaurer
+main: main.java.br.com.alsupreme.wrestaurer.WorldRestaurer
+version: 1.0
+api-version: 1.16
+description: a plugin that make world backup and restore the world for the backup
+depend: [Multiverse-Core]
+load: startup
+author: Andrey
+prefix: WR
+
+commands:
+   saveworld:
+      description: create a backup of a world
+      usage: /<command>
+      permission: WR.saveworld
+   restaureworld:
+      description: restore all worlds in config file to current backup saved
+      usage: /<command>
+      permission: WR.restaureworld
+   deleteworld:
+      description: delete the world from the list and the backup of this world
+      usage: /<command>
+      permission: WR.deleteworld
+
+permissions:
+  WR.adminuse:
+    description: Allow all the plugin commands
+    default: false
+    children:
+        WR.saveworld: true
+        WR.restaureworld: true
+        WR.deleteworld: true
